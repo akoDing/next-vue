@@ -2,17 +2,23 @@
   <div>
     <img alt="Vue logo" src="./assets/logo.png" />
     <HelloWorld msg="Welcome to Your Vue.js + TypeScript App" />
+    <CountsRef />
+    <CountReactive />
   </div>
 </template>
 
 <script lang="ts">
 import { defineComponent } from "vue";
 import HelloWorld from "./components/HelloWorld.vue";
+import CountsRef from "./components/Count.vue";
+import CountReactive from "./components/Count-ll.vue";
 
 export default defineComponent({
   name: "App",
   components: {
     HelloWorld,
+    CountsRef,
+    CountReactive,
   },
 });
 </script>
